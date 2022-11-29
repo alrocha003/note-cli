@@ -11,6 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/alrocha003/note-cli.git"
   },
+  "type": "module",
+  "bin": "./index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
