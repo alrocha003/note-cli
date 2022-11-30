@@ -1,27 +1,20 @@
 #!/usr/bin/env node
-import * as fs from 'fs';
+import { exit } from 'process';
 
-const FILE_NAME = 'db';
+import { addNote, displayNotes } from './options.js';
 
+const INDICE_OPTION = 2
 
-console.table('----------------------------------');
-console.table('------------Note`s CLI------------');
-console.table('----------------------------------\n');
+if (process?.argv[INDICE_OPTION] === undefined) {
+    console.error('Necessário informar opção de execucão/n Ex: --add | -a | -l | --list', 5);
+    exit(1);
+}
 
-
-if (process?.argv[2]?.indexOf('--add') > -1)
-    fs.appendFile(`./${FILE_NAME}.txt`, process.argv[3], (err, file) => {
-        if (err) console.error(err);
-    });
+if (process?.argv[INDICE_OPTION]?.indexOf('--add') > -1 || process?.argv[INDICE_OPTION]?.indexOf('-a') > -1)
+    addNote(process.argv[3]);
+else if (process?.argv[INDICE_OPTION]?.indexOf('--list') > - 1 || process?.argv[INDICE_OPTION]?.indexOf('-l') > - 1)
+    displayNotes();
 else
-    fs.readFile(`./${FILE_NAME}.txt`, (error, data) => {
-        if (error) {
-            console.error(`Não foi possível ler os dados da base: ${error}`);
-            return;
-        }
-        console.debug(data.toString('utf8'));
-    });
-
-
+    console.warn(`${process?.argv[INDICE_OPTION]} não é reconhecido como uma opção válida`, 5);
 
 
