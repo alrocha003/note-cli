@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 import { exit } from 'process';
-
+import yargs from 'yargs';
+import { hideBin } from 'yargs/helpers'
 import { addNote, displayNotes } from './options.js';
 
 const INDICE_OPTION = 2
+
+const argv = yargs(hideBin(process.argv)).argv;
+
+console.debug(argv?.add !== undefined);
 
 if (process?.argv[INDICE_OPTION] === undefined) {
     console.error('Necessário informar opção de execucão/n Ex: --add | -a | -l | --list', 5);

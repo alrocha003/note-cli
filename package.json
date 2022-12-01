@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/alrocha003/note-cli/issues"
   },
-  "homepage": "https://github.com/alrocha003/note-cli#readme"
+  "homepage": "https://github.com/alrocha003/note-cli#readme",
+  "dependencies": {
+    "yargs": "^17.6.2"
+  }
 }
