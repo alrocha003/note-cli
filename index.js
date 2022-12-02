@@ -8,8 +8,6 @@ const INDICE_OPTION = 2
 
 const argv = yargs(hideBin(process.argv)).argv;
 
-console.debug(argv?.add !== undefined);
-
 if (process?.argv[INDICE_OPTION] === undefined) {
     console.error('Necessário informar opção de execucão/n Ex: --add | -a | -l | --list', 5);
     exit(1);
