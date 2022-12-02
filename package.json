@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/alrocha003/note-cli#readme",
   "dependencies": {
+    "moment": "^2.29.4",
     "yargs": "^17.6.2"
   }
 }
