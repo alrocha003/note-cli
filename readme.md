@@ -1,6 +1,6 @@
 ## Note CLI
 
-![Npm logo](https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg)
+![Npm logo](./resources/npm.svg)
 
 ### Pacote de execução npx para salvar notas do dia-a-dia.
 
