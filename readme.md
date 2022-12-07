@@ -1,6 +1,9 @@
 ## Note CLI
 
-![Npm logo](./resources/npm.svg)
+
+![Npm logo](./resources/npm.svg)  
+
+![Node logo](./resources/nodejs.svg)
 
 ### Pacote de execução npx para salvar notas do dia-a-dia.
 
