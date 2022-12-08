@@ -14,18 +14,18 @@ Note CLI é um utilitário de linha de comando para salvar notas de texto que po
 O utilitário é construído utilizando node.Js e npx, onde o mesmo será executa via linha de comando pelo comando 
 
 ```sh
- npx note 
+ npx ./src 
  ```
 Saída:
 
  ```sh
-Necessário informar opção de execucão/n Ex: --add | -a | -l | --list 5
+Necessário informar opção de execução - Ex: --add | -a | -l | --list 5
  ```
 
 Para adicionar uma nova nota:
 
 ```sh
- npx note --add='Nova nota' 
+ npx ./src --add='Nova nota' 
  ```
 Saída:
 ```sh
@@ -35,11 +35,11 @@ Saída:
 Para listar as notas armazenadas:
 
 ```sh
- npx note --list 
+ npx ./src --list 
  ```
  ou
 ```sh
- npx note -l 
+ npx ./src -l 
  ```
 
 Saída:
