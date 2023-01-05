@@ -1,6 +1,5 @@
 ## Note CLI
 
-
 ![Npm logo](./resources/npm.svg)  
 
 ![Node logo](./resources/nodejs.svg)

@@ -1,0 +1,13 @@
+
+
+class Database {
+
+
+    insertData() {
+
+    }
+
+    removeDate() {
+
+    }
+}
