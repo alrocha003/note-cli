@@ -47,4 +47,8 @@ Saída:
 
 
 
+### Backlog
+- Implementar recurso de banco de dados embarcado.
+
+
 
